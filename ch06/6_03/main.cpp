@@ -6,7 +6,7 @@ int main()
   std::cout << "Please enter one of the following choices: \n";
   std::cout << "c) carnivorse           p) pianist \n"
             << "t) tree                 g) game \n";
-  char ch = std::cin.get();
+  char ch = std::cin.get();   // 此次输入2个字符， 回车 \n 还留在缓冲区！！！
   while ((ch != 'c') && (ch != 'p') && (ch != 't')&& (ch != 'g')) {
       std::cin.get();  // 删除上次输入的回车！！！！
       std::cout << "Please enter a c, p, t, or g: ";
