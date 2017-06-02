@@ -43,7 +43,7 @@ int main()
     if (!inFile.is_open()){
         std::cout << "Could not open the file " << filename << std::endl;
         std::cout << "Programe teminating. \n" ;
-         exit(EXIT_FAILURE);
+         std::exit(EXIT_FAILURE);
     }
     int count = 0;
     inFile.get();

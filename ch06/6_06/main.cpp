@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <array>
 struct Patron{
     std::string name;
     double donations;
