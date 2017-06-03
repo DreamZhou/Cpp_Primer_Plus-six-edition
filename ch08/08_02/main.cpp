@@ -35,3 +35,6 @@ void showcandybar(const CandyBar &cb)
               << "weight: " << cb.weight << std::endl
               << "calorie: " << cb.calorie <<std::endl;
 }
+
+
+//使用 字符串常量作为参数。要用const ！！！
