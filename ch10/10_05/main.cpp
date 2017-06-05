@@ -79,3 +79,7 @@ void promot(char & ch)
     }
 //    std::cout << std::endl;
 }
+
+
+//缓冲器的 残留的 \n 真烦人
+//
