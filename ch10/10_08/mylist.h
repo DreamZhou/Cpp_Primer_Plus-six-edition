@@ -30,6 +30,6 @@ public:
 void showinfo(Item &it);
 std::string printname(Item & it);
 int printscore(Item &it);
-
+void str_tim(std::string & s); //删除尾部空白字符 （isspace）
 #endif // MYLIST_H
 

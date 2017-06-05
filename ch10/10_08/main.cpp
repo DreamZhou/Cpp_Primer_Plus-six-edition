@@ -12,7 +12,8 @@ int main()
         std::cout << "Cannot open file ,please check!" ;
      for (int i = 0;i < ListSize && !infile.eof(); ++i){
          std::getline(infile,st.name,'#');
-         std::cout << st.name << "  ";
+         str_tim(st.name);
+         std::cout << st.name;
          infile >> st.scores ;
          std::cout << st.scores <<std::endl;
          while (infile.get() != '\n' && !infile.eof() ) {

@@ -37,7 +37,7 @@ void Mylist::vist(void (*pf)(Item & it ))
 void Mylist::writefile(std::ostream &os, std::string (*pn)(Item &),int (*ps)(Item &))
 {
     for(int i = 0 ; i <size ; ++i){
-        os << (*pn)(mylist[i]) << "    # "
+        os << (*pn)(mylist[i]) << "#"
                 <<  (*ps)(mylist[i]) << std::endl;
     }
 }
@@ -60,4 +60,13 @@ std::__cxx11::string printname(Item &it)
 int printscore(Item &it)
 {
       return it.scores;
+}
+
+void str_tim(std::string & s)
+{
+    while (s.rbegin() != s.rend()) {
+       if ( isspace(*s.rbegin()))
+           s.pop_back();
+       else break;
+   }
 }
